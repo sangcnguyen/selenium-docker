@@ -10,7 +10,7 @@ pipeline {
     stage('Run test') {
       agent {
         docker {
-          image 'maven:3.9.6-eclipse-temurin-11-alpine'
+          image 'maven:3.9.6-eclipse-temurin-17'
           args '-v $HOME/.m2:/root/.m2'
         }
 
